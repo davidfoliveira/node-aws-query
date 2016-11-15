@@ -1,0 +1,4 @@
+TODO:
+    - Generate resource IDs on resource blessing
+    - getAllDescendents()
+    - getChildren()
