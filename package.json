@@ -1,0 +1,15 @@
+{
+  "name": "aws-query",
+  "version": "1.0.0",
+  "description": "AWS resource query library",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocka"
+  },
+  "author": "David Oliveira <d.oliveira@prozone.org>",
+  "license": "BSD",
+  "dependencies": {
+    "aws-sdk": ">=2.6.6",
+    "async": ">=2.1.2"
+  }
+}
