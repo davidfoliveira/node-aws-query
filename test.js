@@ -2,7 +2,7 @@ var
     AWS = require('./lib/'),
     aws = new AWS({regions: ['eu-west-1', 'eu-central-1']});
 
-aws.getResources(aws.$("elb ec2"), function(err, res){
+aws.getResources(aws.$("asg"), function(err, res){
     if ( err ) {
         console.log("ERR: ", err);
         return process.exit(-1);
