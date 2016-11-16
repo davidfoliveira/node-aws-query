@@ -2,6 +2,8 @@ var
     AWS = require('./lib/'),
     aws = new AWS({regions: ['eu-west-1', 'eu-central-1']});
 
+
+
 aws.getResources(aws.$("asg"), function(err, res){
     if ( err ) {
         console.log("ERR: ", err);
