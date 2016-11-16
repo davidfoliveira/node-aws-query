@@ -4,7 +4,7 @@ var
 
 
 
-aws.getResources(aws.$("asg"), function(err, res){
+aws.getResources(aws.$("asg > ec2"), function(err, res){
     if ( err ) {
         console.log("ERR: ", err);
         return process.exit(-1);
