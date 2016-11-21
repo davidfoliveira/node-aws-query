@@ -4,11 +4,14 @@ var
 
 
 
-aws.getResources(aws.$("asg > ec2"), function(err, res){
+aws.getResources(aws.$("!asg elb#Test"), function(err, res){
     if ( err ) {
         console.log("ERR: ", err);
         return process.exit(-1);
     }
     console.log(JSON.stringify(res,0,4));
+    res.forEach(function(r){
+        console.log(r._id);
+    });
     return process.exit(0);
 });

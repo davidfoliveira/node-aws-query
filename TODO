@@ -1,4 +1,7 @@
 TODO:
-    - getAllDescendents()
+    - Selector subject support
+    - * support
+    - Caching support
+    - Test everything
     - Property filtering
     - Test everything
