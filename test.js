@@ -9,7 +9,7 @@ aws.getResources(aws.$("!asg elb#Test"), function(err, res){
         console.log("ERR: ", err);
         return process.exit(-1);
     }
-    console.log(JSON.stringify(res,0,4));
+//    console.log(JSON.stringify(res,0,4));
     res.forEach(function(r){
         console.log(r._id);
     });
