@@ -14,5 +14,19 @@ aws.getResources(aws.$('ec2'), function(err, res){
     res.forEach(function(r){
         console.log(r._id);
     });
-    return process.exit(0);
+
+    console.log("--");
+    aws.getResources(aws.$('!elb ec2'), function(err, res){
+        if ( err ) {
+            console.log("ERR: ", err);
+            return process.exit(-1);
+        }
+
+        console.log("Result:");
+        res.forEach(function(r){
+            console.log(r._id);
+        });
+
+        return process.exit(0);
+    });
 });
