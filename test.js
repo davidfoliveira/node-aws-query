@@ -1,6 +1,6 @@
 var
     AWS = require('./lib/'),
-    aws = new AWS({regions: ['eu-west-1', 'eu-central-1'], cache:{ec2: Infinity, elb:300, asg: Infinity}}),
+    aws = new AWS({regions: ['eu-west-1', 'eu-central-1'], cache:{ec2: Infinity, elb:300, asg: Infinity}, cacheDriver: "dynamo"}),
     start = new Date();
 
 
