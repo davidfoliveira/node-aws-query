@@ -1,7 +1,5 @@
 TODO:
-    - Fix AWSCachedRegionModule prototyping/caching
     - Tidy up/refactor _scale()
-    - Test scaling
     - Property filtering
     - Test everything
 
