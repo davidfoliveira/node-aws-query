@@ -5,12 +5,11 @@ var
 
 
 
-aws.ec2.autoscaling.scale(aws.$('asg'), '-1', function(err, res){
+aws.ec2.autoscaling.scale(aws.$('asg'), '-25%', function(err, res){
     if ( err ) {
         console.log("ERR: ", err);
         return process.exit(-1);
     }
-    console.log(res);
 /*    res.forEach(function(r){
         console.log(r._id);
     });
