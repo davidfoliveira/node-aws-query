@@ -1,6 +1,7 @@
 TODO:
+    - Tests
+
     - Property filtering
     - Test everything
 
-    - FS cache support
     - Memory cache locks (wait for pending call)
