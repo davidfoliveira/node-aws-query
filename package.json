@@ -4,7 +4,7 @@
   "description": "AWS resource query library",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocka"
+    "test": "node_modules/.bin/mocha --recursive"
   },
   "author": "David Oliveira <d.oliveira@prozone.org>",
   "license": "BSD",
@@ -13,5 +13,8 @@
     "async": ">=2.1.2",
     "mocha": ">=1.0.0",
     "sinon": ">=1.17.6"
+  },
+  "devDependencies": {
+    "mocha": ">=1.0.0"
   }
 }
