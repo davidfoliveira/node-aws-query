@@ -4,16 +4,27 @@ var
     start = new Date();
 
 
+aws.ec2.instances.select("eu-west-1", {all: true}, function(err, res){
+	if ( err ) {
+		console.log("ERR: ", err);
+		return process.exit(-1);
+	}
+	console.log(res);
+	return process.exit(0);
+});
+
+/*
 
 aws.ec2.autoscaling.scale(aws.$('asg'), '-25%', function(err, res){
     if ( err ) {
         console.log("ERR: ", err);
         return process.exit(-1);
     }
-/*    res.forEach(function(r){
+    res.forEach(function(r){
         console.log(r._id);
     });
-*/
     console.log(res);
     console.log("Took: ", (new Date()-start), "ms");
 });
+
+*/

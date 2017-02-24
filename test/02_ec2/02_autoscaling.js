@@ -41,8 +41,8 @@ describe('autoscaling', function() {
                     if ( err )
                         return done(err);
 
-                    assert('NotFound1' in tags, "Element 'NotFound1' not found on the tags object");
-                    assert('NotFound2' in tags, "Element 'NotFound2' not found on the tags object");
+                    assert('NotFound1' in tags, true, "Element 'NotFound1' not found on the tags object");
+                    assert('NotFound2' in tags, true, "Element 'NotFound2' not found on the tags object");
                     done();
                 });
             });
